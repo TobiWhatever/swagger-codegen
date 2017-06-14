@@ -717,6 +717,7 @@ class Decoders {
               _ = Decoders.decode(clazz: Animal.self, source: source, instance: result)
             }
 
+
             result.className = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["className"] as AnyObject?)
             result.color = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["color"] as AnyObject?)
             result.declawed = Decoders.decodeOptional(clazz: Bool.self, source: sourceDictionary["declawed"] as AnyObject?)
